@@ -1,9 +1,11 @@
+import { NavBar } from './components/NavBar'
+import { Home } from './components/Home'
 
-
-function App() {
+const App = (): JSX.Element => {
   return (
-    <div className="bg-black h-screen grid place-items-center text-white">
-      <h1>Hello World!!</h1>
+    <div className='h-screen bg-gradient-to-tr from-blue-950 via-black to-black'>
+      <NavBar />
+      <Home />
     </div>
   )
 }
