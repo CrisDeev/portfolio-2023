@@ -28,7 +28,7 @@ export const Home = (): JSX.Element => {
         }}
         />
         <a
-          href='../../../public/Curriculum.pdf'
+          href='./public/Curriculum.pdf'
           rel='noopener noreferrer'
           target='_blank'
           className='border-[#3694ff] border-2 w-32 py-3 rounded-md text-[#3694ff] flex justify-center items-center gap-1 hover:text-purple-800 +-
