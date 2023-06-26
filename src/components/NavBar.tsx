@@ -32,7 +32,7 @@ export const NavBar = (): JSX.Element => {
             <div className={`bg-white w-[94%] h-[3px] rounded transition-all origin-left duration-300 ${menuButton ? '-rotate-45' : ''}`}></div>
           </button>
           <div className='text-white hidden md:flex gap-6 font-semibold tracking-wide text-lg'>
-            <a className='focus:text-[#3694ff] p-1 focus:border-b-[1px] focus:border-b-white hover:text-[#3694ff] transition-all duration-100' href='https://www.google.com' target='_blank' rel='noreferrer'>Sobre mi</a>
+            <a className='focus:text-[#3694ff] p-1 focus:border-b-[1px] focus:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#About' rel='noreferrer'>Sobre mi</a>
             <a className='focus:text-[#3694ff] p-1 focus:border-b-[1px] focus:border-b-white hover:text-[#3694ff] transition-all duration-100' href='https://www.google.com' target='_blank' rel='noreferrer'>Proyectos</a>
             <a className='focus:text-[#3694ff] p-1 focus:border-b-[1px] focus:border-b-white hover:text-[#3694ff] transition-all duration-100' href='https://www.google.com' target='_blank' rel='noreferrer'>Habilidades</a>
             <a className='focus:text-[#3694ff] p-1 focus:border-b-[1px] focus:border-b-white hover:text-[#3694ff] transition-all duration-100' href='https://www.google.com' target='_blank' rel='noreferrer'>Contactame</a>

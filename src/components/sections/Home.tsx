@@ -8,7 +8,7 @@ export const Home = (): JSX.Element => {
     <section className='h-[100vh] px-6 md:px-28 lg:px-40 2xl:px-96' id='Home'>
       <div className='text-white h-full flex gap-8 flex-col justify-center mobile:items-center border-b-[1px] border-white/25 md:items-start lg:pt-20'>
         <p className='text-3xl font-semibold lg:text-4xl'><span className='text-4xl tracking-wide text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400 lg:text-5xl'>Hola,</span> soy</p>
-        <h1 className='text-6xl font-medium tracking-wide mobile:text-4xl mobile:text-center lg:text-[85px] lg:text-left'>Cristian Álvarez Martínez</h1>
+        <h1 className='text-6xl font-medium tracking-wide leading-tight mobile:text-4xl mobile:text-center lg:leading-none lg:text-[85px] lg:text-left'>Cristian Álvarez Martínez</h1>
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -28,7 +28,7 @@ export const Home = (): JSX.Element => {
         }}
         />
         <a
-          href='../../public/Curriculum.pdf'
+          href='../../../public/Curriculum.pdf'
           rel='noopener noreferrer'
           target='_blank'
           className='border-[#3694ff] border-2 w-32 py-3 rounded-md text-[#3694ff] flex justify-center items-center gap-1 hover:text-purple-800 +-
