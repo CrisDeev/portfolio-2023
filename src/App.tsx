@@ -1,11 +1,13 @@
-import { Home } from './components/Home'
+import { Home } from './components/sections/Home'
+import { About } from './components/sections/About'
 import { PortfolioLayout } from './components/layouts/PortfolioLayout'
 
 const App = (): JSX.Element => {
   return (
-    <div className='h-screen bg-gradient-to-tr from-blue-950 via-black to-black'>
+    <div className='h-auto bg-gradient-to-tr from-blue-950 via-black to-black'>
       <PortfolioLayout>
         <Home />
+        <About />
       </PortfolioLayout>
     </div>
   )
