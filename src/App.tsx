@@ -1,5 +1,6 @@
 import { Home } from './components/sections/Home'
 import { About } from './components/sections/About'
+import { Projects } from './components/sections/Projects'
 import { PortfolioLayout } from './components/layouts/PortfolioLayout'
 
 const App = (): JSX.Element => {
@@ -8,6 +9,7 @@ const App = (): JSX.Element => {
       <PortfolioLayout>
         <Home />
         <About />
+        <Projects />
       </PortfolioLayout>
     </div>
   )
