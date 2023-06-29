@@ -28,7 +28,7 @@ export const Home = (): JSX.Element => {
         }}
         />
         <a
-          href='./public/CristianAlvarez.pdf'
+          href='.https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Cristian%20Alvarez.pdf?alt=media&token=971c8d14-b32b-4c5e-8046-d3bc71974a9f'
           rel='noopener noreferrer'
           target='_blank'
           className='border-[#3694ff] border-2 w-32 py-3 rounded-md text-[#3694ff] flex justify-center items-center gap-1 hover:text-purple-800 +-
