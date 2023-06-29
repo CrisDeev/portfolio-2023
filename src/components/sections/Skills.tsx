@@ -1,6 +1,6 @@
 import { DataSkills } from '../../const'
 
-export const Conocimientos = (): JSX.Element => {
+export const Skills = (): JSX.Element => {
   return (
     <section className="h-auto py-32 px-14 lg:py-36 xl:py-44 2xl:py-48" id='Conocimientos'>
       <div className='flex flex-col items-center gap-5 '>
