@@ -1,4 +1,12 @@
-import { type ListOfProjects } from './types'
+import { type ListOfProjects, type ListOfSkills } from './types'
+import js from './static/images/javascript.svg'
+import mongo from './static/images/mongodb.png'
+import nodejs from './static/images/nodejs.png'
+import react from './static/images/react.png'
+import typescript from './static/images/typescript.png'
+import postman from './static/images/getpostman-icon.svg'
+import git from './static/images/git.png'
+import tailwind from './static/images/Tailwind.png'
 
 export const DataProjects: ListOfProjects = [
   {
@@ -19,4 +27,15 @@ export const DataProjects: ListOfProjects = [
     githubLink: 'https://github.com/expressbuymh',
     tecnologies: ['React', 'Express', 'MongoDB', 'NodeJS', 'Tailwindcss']
   }
+]
+
+export const DataSkills: ListOfSkills = [
+  { name: 'JavaScript', image: js },
+  { name: 'MongoDB', image: mongo },
+  { name: 'NodeJS', image: nodejs },
+  { name: 'React', image: react },
+  { name: 'TypeScript', image: typescript },
+  { name: 'Postman', image: postman },
+  { name: 'Git', image: git },
+  { name: 'TailwindCSS', image: tailwind }
 ]
