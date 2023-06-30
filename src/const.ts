@@ -1,12 +1,12 @@
 import { type ListOfProjects, type ListOfSkills } from './types'
-import js from './static/images/javascript.svg'
-import mongo from './static/images/mongodb.png'
-import nodejs from './static/images/nodejs.png'
-import react from './static/images/react.png'
-import typescript from './static/images/typescript.png'
-import postman from './static/images/getpostman-icon.svg'
-import git from './static/images/git.png'
-import tailwind from './static/images/Tailwind.png'
+import js from './static/images/skills/javascript.svg'
+import mongo from './static/images/skills/mongodb.png'
+import nodejs from './static/images/skills/nodejs.png'
+import react from './static/images/skills/react.png'
+import typescript from './static/images/skills/typescript.png'
+import postman from './static/images/skills/getpostman-icon.svg'
+import git from './static/images/skills/git.png'
+import tailwind from './static/images/skills/Tailwind.png'
 
 export const DataProjects: ListOfProjects = [
   {
