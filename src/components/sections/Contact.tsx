@@ -61,12 +61,12 @@ export const Contact = (): JSX.Element => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="text-slate-100 font-semibold pl-1">Mendaje</label>
+            <label className="text-slate-100 font-semibold pl-1">Mensaje</label>
             <input
               type='text'
               onChange={onChange}
               id='message'
-              className='bg-zinc-800 p-2 rounded-xl resize-none h-full mt-2 focus:outline-none text-slate-300 xl:h-32'
+              className='bg-zinc-800 p-2 rounded-xl resize-none h-20 mt-2 focus:outline-none text-slate-300 xl:h-32'
               placeholder="Escribe tu mensaje..."
               value={message}
               >
