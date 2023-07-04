@@ -5,15 +5,17 @@ import { Drawer } from './Drawer'
 export const NavBar = (): JSX.Element => {
   const [menuButton, setMenuButton] = useState(false)
 
-  const handleMenuButton = (event: React.MouseEvent<HTMLButtonElement>): void => {
-    event.preventDefault()
+  const handleMenuButton = (): void => {
     setMenuButton(!menuButton)
   }
 
   return (
     <>
       <nav className="fixed w-full px-10 py-3 flex justify-between items-center backdrop-blur-md">
-        <Drawer open={menuButton} />
+        <Drawer
+        menuButton = {menuButton}
+        handleMenuButton = {handleMenuButton}
+        />
         <div className='flex gap-5'>
           <a href="https://github.com/CrisDeev" target='_blank' rel='noreferrer noopener'>
             <AiOutlineGithub className="text-slate-50 text-4xl hover:text-red-500 transition-all duration-100" />
