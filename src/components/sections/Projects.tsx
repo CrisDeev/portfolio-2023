@@ -6,16 +6,18 @@ export const Projects = (): JSX.Element => {
       <div className="w-full grid justify-center gap-12 grid-cols-1 px-5 md:w-[70%] lg:grid-cols-2 lg:w-full xl:w-[80%] 2xl:w-[70%]">
 
         <a
-        href=""
+        href="https://todo-app-typescript-iota.vercel.app/"
         rel="noreferrer noopener"
+        target="_blank"
         className={'h-[400px] bg-center bg-cover bg-no-repeat flex flex-col justify-between rounded-xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1.5 bg-[url("https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FToDoImage.png?alt=media&token=926641a3-6e3f-4f1c-b7d1-1d82114c5d9a")] border-2 border-black'}>
           <h1 className="m-4 border-2 border-white/50 bg-black/30 w-[80%] p-2 text-md text-purple-900 font-bold rounded-tr-xl rounded-bl-xl mobile:w-[60%] md:w-[50%] lg:w-[]" >PROYECTO<br /> <span className="text-white text-xl font-semibold">To-Do App</span></h1>
           <p className=" h-[15%] p-5 truncate bg-black/50 font-bold text-white">App web donde prodrás organizar todas tu tareas</p>
         </a>
 
         <a
-        href=""
+        href="https://front-web-six.vercel.app/"
         rel="noreferrer noopener"
+        target="_blank"
         className={'h-[400px] bg-center bg-cover bg-no-repeat flex flex-col justify-between rounded-xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1.5 bg-[url("https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FExpressBuyImg.png?alt=media&token=3768c076-4fb5-44a7-a47e-061dd1e75b7d")] border-2 border-black'}>
           <h1 className="m-4 border-2 border-white/50 bg-black/30 w-[80%] p-2 text-sm text-purple-900 font-bold rounded-tr-xl rounded-bl-xl mobile:w-[60%] md:w-[50%] lg:w-[]" >PROYECTO<br /> <span className="text-white text-xl font-semibold">E-commerce</span></h1>
           <p className="h-[15%] p-5 truncate bg-black/50 font-bold text-white">Esta app es un E-commerce que cuenta con su proceso de compra y administración de productos</p>
