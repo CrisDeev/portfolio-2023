@@ -11,7 +11,7 @@ export const NavBar = (): JSX.Element => {
 
   return (
     <>
-      <nav className="fixed w-full px-10 py-3 flex justify-between items-center backdrop-blur-md">
+      <nav className="fixed w-full px-10 py-3 flex justify-between items-center backdrop-blur-md z-20">
         <Drawer
         menuButton = {menuButton}
         handleMenuButton = {handleMenuButton}
