@@ -8,7 +8,7 @@ export interface SeedProject {
   tecnologies: ValIdTecnologies[]
 }
 
-type ValIdTecnologies = 'JavaScript' | 'NodeJS' | 'React' | 'CSS' | 'Tailwindcss' | 'MongoDB' | 'HTML' | 'TypesScript' | 'Express'
+type ValIdTecnologies = 'JavaScript' | 'NodeJS' | 'ReactJS' | 'CSS' | 'Tailwindcss' | 'MongoDB' | 'HTML' | 'TypesScript' | 'Express'
 
 export type ListOfProjects = SeedProject[]
 

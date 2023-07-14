@@ -16,7 +16,7 @@ export const DataProjects: ListOfProjects = [
     image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FToDoImage.png?alt=media&token=298c04f1-882e-4b70-9734-018a97951876',
     projectLink: 'https://todo-app-typescript-iota.vercel.app/',
     githubLink: 'https://github.com/CrisDeev/todo-app-typescript',
-    tecnologies: ['TypesScript', 'React', 'Tailwindcss']
+    tecnologies: ['TypesScript', 'ReactJS', 'Tailwindcss']
   },
   {
     id: '2',
@@ -25,7 +25,16 @@ export const DataProjects: ListOfProjects = [
     image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FExpressBuyImg.png?alt=media&token=3768c076-4fb5-44a7-a47e-061dd1e75b7d',
     projectLink: 'https://front-web-six.vercel.app/',
     githubLink: 'https://github.com/expressbuymh',
-    tecnologies: ['React', 'Express', 'MongoDB', 'NodeJS', 'Tailwindcss']
+    tecnologies: ['ReactJS', 'Express', 'MongoDB', 'NodeJS', 'Tailwindcss']
+  },
+  {
+    id: '3',
+    title: 'Manga reader',
+    description: 'En este sitio web puedes leer tus mangas favoritos, y si eres un autor comodamente podrás publicar tus mangas',
+    image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FMangaReader.png?alt=media&token=bee9b00c-e6eb-4cf3-b08a-68d5d5f7a031',
+    projectLink: 'https://minga-blanco-front-ruby.vercel.app/',
+    githubLink: 'https://github.com/CristianAlvarezM/minga_blanco_front',
+    tecnologies: ['ReactJS', 'Tailwindcss', 'MongoDB']
   }
 ]
 
@@ -33,7 +42,7 @@ export const DataSkills: ListOfSkills = [
   { name: 'JavaScript', image: js },
   { name: 'MongoDB', image: mongo },
   { name: 'NodeJS', image: nodejs },
-  { name: 'React', image: react },
+  { name: 'ReactJS', image: react },
   { name: 'TypeScript', image: typescript },
   { name: 'Postman', image: postman },
   { name: 'Git', image: git },
