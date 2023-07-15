@@ -5,10 +5,10 @@ interface Props {
 
 export const ModalProjects: React.FC<Props> = ({ handleOpenModal }) => {
   return (
-    <div onClick={handleOpenModal} className="fixed inset-0 z-20 bg-black bg-opacity-30 grid place-items-center">
+    <div className="fixed inset-0 z-20 bg-black bg-opacity-30 grid place-items-center">
       <div className="w-[280px] h-[600px] bg-[#16181A] p-8 flex flex-col items-center justify-between rounded-3xl md:w-[70%] xl:h-[80%] 2xl:h-[70%] 2xl:w-[60%]">
         <div className='flex w-full justify-end'>
-          <AiFillCloseSquare className='text-white text-2xl' onClick={handleOpenModal}/>
+          <AiFillCloseSquare className='text-white text-2xl cursor-pointer' onClick={handleOpenModal}/>
         </div>
         <h1 className='text-slate-100 text-3xl my-5 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400'>TO-DO App</h1>
         <div className='xl:mx-40 '>
@@ -27,8 +27,20 @@ export const ModalProjects: React.FC<Props> = ({ handleOpenModal }) => {
             />
         </div>
         <footer className='w-full h-8 flex justify-evenly items-end mt-4 lg:justify-center lg:gap-7'>
-          <AiFillGithub className='text-3xl text-red-600' />
-          <AiFillEye className='text-3xl text-slate-100' />
+          <a
+            href="https://github.com/CristianAlvarezM"
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
+          </a>
+          <a
+            href=""
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <AiFillEye className='text-3xl text-slate-100 cursor-pointer hover:scale-110' />
+          </a>
         </footer>
       </div>
     </div>
