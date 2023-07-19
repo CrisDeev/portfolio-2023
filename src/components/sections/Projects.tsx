@@ -1,9 +1,11 @@
 import { ModalProjects } from '../ModalProjects'
 import { useState } from 'react'
 import { DataProjects } from '../../const'
+import { useModal } from '@nextui-org/react'
 
 export const Projects = (): JSX.Element => {
   const [openModal, setOpenModal] = useState(false)
+  const { setVisible, bindings } = useModal()
   const [projTitle, setProjTitle] = useState<string | undefined>(undefined)
   const [projDesc, setProjDesc] = useState<string | undefined>(undefined)
   const [projGitHub, setProjGitHub] = useState<string | undefined>(undefined)
@@ -21,8 +23,10 @@ export const Projects = (): JSX.Element => {
   }
 
   const handleOpenModal = (): void => {
-    setOpenModal(!openModal)
+    setVisible(true)
+    setOpenModal(true)
   }
+
   return (
    <section className="h-auto py-20 px-8 overflow-hidden" id='Projects'>
     {openModal && <ModalProjects
@@ -33,6 +37,8 @@ export const Projects = (): JSX.Element => {
       projTecnologies={projTec}
       projImages={projImage}
       projLink={projLink}
+      setVisible={setVisible}
+      bindings={bindings}
     />}
     <div className="flex items-center flex-col gap-20 md:gap-28">
       <h1 className="h-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400 md:text-6xl">Projects</h1>
