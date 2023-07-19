@@ -20,34 +20,36 @@ export const ModalProjects: React.FC<Props> = ({ title, description, projGitHub,
     <div>
       <Modal
         scroll
-        width= '600px'
+        width='600px'
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
         {...bindings}
         className='mx-6 h-[550px] lg:h-auto'
       >
-       <Modal.Header className='bg-[#16181A]'>
+        <Modal.Header className='bg-[#16181A] '>
           <div className='w-full bg-[#16181A] flex justify-between'>
-            <Text className='text-slate-100 text-4xl p-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400'>
+            <h1 className='text-slate-100 text-4xl p-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400'>
               {title}
-            </Text>
+            </h1>
             <AiFillCloseSquare className='text-white text-2xl cursor-pointer hover:text-red-600 duration-100 hover:scale-110' onClick={handleCloseModal} />
           </div>
         </Modal.Header>
         <Modal.Body className='bg-[#16181A]'>
-          <Text className='text-white text-2xl text-center font-extrabold'>Descripción del proyecto:</Text>
-          <Text className='text-white text-center text-lg'>{description}.</Text>
-            <div className='flex flex-col items-center gap-8'>
-              <div className='flex flex-col text-white'>
-                <h2 className='text-xl font-bold mb-2'>Tecnologias usadas:</h2>
-                {
-                  projTecnologies?.map((tec, index) => (
-                    <span key={index} className='border-b-2 border-white text-center p-1'>{tec}</span>
-                  ))
-                }
-              </div>
-              <img className='mb-4 rounded h-[250px] md:w-[80%]' src={projImages} alt={title} />
+          <h2 className='text-white text-2xl text-center font-extrabold'>Descripción del proyecto:</h2>
+          <p className='text-white text-center text-lg'>{description}.</p>
+          <div className='flex flex-col items-center gap-8'>
+            <div className='flex flex-col text-white'>
+              <h2 className='text-xl font-bold mb-2'>Tecnologias usadas:</h2>
+              {
+                projTecnologies?.map((tec, index) => (
+                  <span key={index} className='border-b-2 border-white text-center p-1'>{tec}</span>
+                ))
+              }
             </div>
+            <img className='mb-4 rounded h-[250px] md:w-[80%]' src={projImages} alt={title} />
+          </div>
         </Modal.Body>
-         <Modal.Footer className='bg-[#16181A]'>
+        <Modal.Footer className='bg-[#16181A]'>
           <div className='w-full bg-[#16181A] flex justify-center gap-10'>
             <a href={projGitHub} target='_blank' rel='noreferrer noopener'>
               <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
