@@ -21,8 +21,6 @@ export const ModalProjects: React.FC<Props> = ({ title, description, projGitHub,
       <Modal
         scroll
         width= '600px'
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
         {...bindings}
         className='mx-6 h-[550px] lg:h-auto'
       >
@@ -47,13 +45,15 @@ export const ModalProjects: React.FC<Props> = ({ title, description, projGitHub,
               <img className='mb-4 rounded h-[250px] md:w-[80%]' src={projImages} alt={title} />
             </div>
         </Modal.Body>
-        <Modal.Footer className='bg-[#16181A] flex justify-center gap-10'>
-          <a href={projGitHub} target='_blank' rel='noreferrer noopener'>
-            <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
-          </a>
-          <a href={projLink} target='_blank' rel='noreferrer noopener'>
-            <AiFillEye className='text-3xl text-slate-100 cursor-pointer hover:scale-110' />
-          </a>
+         <Modal.Footer className='bg-[#16181A]'>
+          <div className='w-full bg-[#16181A] flex justify-center gap-10'>
+            <a href={projGitHub} target='_blank' rel='noreferrer noopener'>
+              <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
+            </a>
+            <a href={projLink} target='_blank' rel='noreferrer noopener'>
+              <AiFillEye className='text-3xl text-slate-100 cursor-pointer hover:scale-110' />
+            </a>
+          </div>
         </Modal.Footer>
       </Modal>
     </div>
