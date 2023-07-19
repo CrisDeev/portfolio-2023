@@ -33,11 +33,11 @@ export const NavBar = (): JSX.Element => {
             <div className={`bg-white w-[94%] h-[3px] rounded transition-all duration-300 ${menuButton ? 'opacity-0' : ''}`}></div>
             <div className={`bg-white w-[94%] h-[3px] rounded transition-all origin-left duration-300 ${menuButton ? '-rotate-45' : ''}`}></div>
           </button>
-          <div className='text-white hidden md:flex gap-6 font-semibold tracking-wide text-lg'>
-            <a className='hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#About' rel='noreferrer'>Sobre mi</a>
-            <a className='hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Projects' rel='noreferrer'>Proyectos</a>
-            <a className='hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Conocimientos' rel='noreferrer'>Habilidades</a>
-            <a className='hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Contacto' rel='noreferrer'>Contactame</a>
+          <div className='hidden md:flex gap-6 font-semibold tracking-wide text-lg'>
+            <a className='text-white hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#About' rel='noreferrer'>Sobre mi</a>
+            <a className='text-white hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Projects' rel='noreferrer'>Proyectos</a>
+            <a className='text-white hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Conocimientos' rel='noreferrer'>Habilidades</a>
+            <a className='text-white hover:border-b-[1px] hovers:border-b-white hover:text-[#3694ff] transition-all duration-100' href='#Contacto' rel='noreferrer'>Contactame</a>
           </div>
         </div>
       </nav>
