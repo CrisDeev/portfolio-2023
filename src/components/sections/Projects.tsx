@@ -58,7 +58,7 @@ export const Projects = (): JSX.Element => {
               alt=""
               className='absolute w-full h-full'
               />
-            <h1 className="m-4 z-[10] border-2 border-white/50 bg-black/30 w-[80%] p-2 text-md text-purple-900 font-bold rounded-tr-xl rounded-bl-xl mobile:w-[60%] md:w-[50%]" >PROYECTO<br /> <span className="text-white text-xl font-semibold">{proj.title}</span></h1>
+            <h2 className="m-4 text-lg z-[10] border-2 border-white/50 bg-black/30 w-[80%] p-2 text-md text-purple-900 font-bold rounded-tr-xl rounded-bl-xl mobile:w-[60%] md:w-[50%]" >PROYECTO<br /> <span className="text-white text-xl font-semibold">{proj.title}</span></h2>
             <p className=" h-[15%] z-[10] p-5 truncate bg-black/50 font-bold text-white">{proj.description}</p>
           </div>
         ))
