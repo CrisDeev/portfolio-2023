@@ -30,7 +30,7 @@ export const ModalProjects: React.FC<Props> = ({ title, description, projGitHub,
           <Text className='text-slate-100 text-4xl p-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400'>
             {title}
           </Text>
-        <AiFillCloseSquare className='text-white text-2xl cursor-pointer ' onClick={handleCloseModal}/>
+        <AiFillCloseSquare className='text-white text-2xl cursor-pointer hover:text-red-600 duration-100 hover:scale-110' onClick={handleCloseModal}/>
         </Modal.Header>
         <Modal.Body className='bg-[#16181A]'>
           <Text className='text-white text-2xl text-center font-extrabold'>Descripción del proyecto:</Text>
