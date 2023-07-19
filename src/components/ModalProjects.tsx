@@ -1,8 +1,7 @@
 // AiFillGithub, AiFillEye
-import { AiFillCloseSquare } from 'react-icons/ai'
-import { Modal, Button, Text } from '@nextui-org/react'
+import { AiFillCloseSquare, AiFillGithub, AiFillEye } from 'react-icons/ai'
+import { Modal, Text } from '@nextui-org/react'
 interface Props {
-  handleOpenModal: () => void
   title: string | undefined
   description: string | undefined
   projGitHub: string | undefined
@@ -13,7 +12,7 @@ interface Props {
   bindings: any
 }
 
-export const ModalProjects: React.FC<Props> = ({ handleOpenModal, title, description, projGitHub, projTecnologies, projImages, projLink, setVisible, bindings }) => {
+export const ModalProjects: React.FC<Props> = ({ title, description, projGitHub, projTecnologies, projImages, projLink, setVisible, bindings }) => {
   const handleCloseModal = (): void => {
     setVisible(false)
   }
@@ -21,53 +20,40 @@ export const ModalProjects: React.FC<Props> = ({ handleOpenModal, title, descrip
     <div>
       <Modal
         scroll
-        width="600px"
+        width= '600px'
         aria-labelledby="modal-title"
         aria-describedby="modal-description"
         {...bindings}
+        className='mx-6 h-[550px] lg:h-auto'
       >
-        <Modal.Header>
-          <Text
-            id="modal-title" size={18}>
+        <Modal.Header className='bg-[#16181A] flex justify-between'>
+          <Text className='text-slate-100 text-4xl p-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400'>
             {title}
           </Text>
+        <AiFillCloseSquare className='text-white text-2xl cursor-pointer ' onClick={handleCloseModal}/>
         </Modal.Header>
-        <Modal.Body>
-          <Text id="modal-description">
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Cras mattis consectetur
-            purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Praesent commodo cursus magna, vel scelerisque
-            nisl consectetur et. Cras mattis consectetur purus sit amet
-            fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Cras mattis consectetur
-            purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            attis consectetur purus sit amet
-            ferm vel scelerisque nisl consectetur et.
-            Cras mattinsectetur et. Cras mattis consectetur
-            purus sit amet i Cras mattis consectetur
-            purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Praesent commodo cursus magna, vel scelerisque
-            nisl consectetur et.
-          </Text>
+        <Modal.Body className='bg-[#16181A]'>
+          <Text className='text-white text-2xl text-center font-extrabold'>Descripción del proyecto:</Text>
+          <Text className='text-white text-center text-lg'>{description}.</Text>
+            <div className='flex flex-col items-center gap-8'>
+              <div className='flex flex-col text-white'>
+                <h2 className='text-xl font-bold mb-2'>Tecnologias usadas:</h2>
+                {
+                  projTecnologies?.map((tec, index) => (
+                    <span key={index} className='border-b-2 border-white text-center p-1'>{tec}</span>
+                  ))
+                }
+              </div>
+              <img className='mb-4 rounded h-[250px] md:w-[80%]' src={projImages} alt={title} />
+            </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button auto flat color="error" onPress={handleCloseModal}>
-            Close
-          </Button>
-          <Button auto onPress={handleCloseModal}>
-            Agree
-          </Button>
+        <Modal.Footer className='bg-[#16181A] flex justify-center gap-10'>
+          <a href={projGitHub} target='_blank' rel='noreferrer noopener'>
+            <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
+          </a>
+          <a href={projLink} target='_blank' rel='noreferrer noopener'>
+            <AiFillEye className='text-3xl text-slate-100 cursor-pointer hover:scale-110' />
+          </a>
         </Modal.Footer>
       </Modal>
     </div>

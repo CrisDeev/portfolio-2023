@@ -30,7 +30,6 @@ export const Projects = (): JSX.Element => {
   return (
    <section className="h-auto py-20 px-8 overflow-hidden" id='Projects'>
     {openModal && <ModalProjects
-      handleOpenModal = {handleOpenModal}
       title={projTitle}
       description={projDesc}
       projGitHub={projGitHub}
