@@ -1,6 +1,6 @@
 // AiFillGithub, AiFillEye
 import { AiFillCloseSquare, AiFillGithub, AiFillEye } from 'react-icons/ai'
-import { Modal, Text } from '@nextui-org/react'
+import { Modal } from '@nextui-org/react'
 interface Props {
   title: string | undefined
   description: string | undefined
