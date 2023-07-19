@@ -28,9 +28,9 @@ export const Contact = (): JSX.Element => {
     setFormData(defaultFromData)
   }
   return (
-    <section className="h-screen px-6 py-28 lg:h-auto xl:h-screen" id="Contacto">
+    <section className="h-auto px-6 py-28 lg:h-auto xl:h-screen" id="Contacto">
       <h1 className="h-20 text-center text-4xl font-bold text-transparent bg-clip-text mobile:text-4xl md:text-5xl xl:text-7xl bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400">Contactame</h1>
-      <div className="h-full flex flex-col items-center gap-8 xl:flex-row 2xl:px-52">
+      <div className="h-full flex flex-col items-center xl:flex-row 2xl:px-52">
         <Lottie animationData={AnimationContact} className='w-60 lg:w-72 xl:w-[40%]'/>
         <form
           onSubmit={onSubmit}
@@ -71,7 +71,7 @@ export const Contact = (): JSX.Element => {
               >
               </input>
           </div>
-          <button className='bg-gradient-to-r from-fuchsia-500 to-sky-500 w-[60%] lg:w-[35%] p-2 rounded-lg text-white mx-auto shadow-[0_4px_14px_rgba(14,165,233,0.5)]' type="submit">Contactame ahora</button>
+          <button className='bg-gradient-to-r from-fuchsia-500 to-sky-500 w-[80%] lg:w-[35%] p-2 rounded-lg text-white mx-auto shadow-[0_4px_14px_rgba(14,165,233,0.5)]' type="submit">Contactame ahora</button>
         </form>
       </div>
     </section>

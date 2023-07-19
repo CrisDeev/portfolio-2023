@@ -4,6 +4,20 @@ import { DataProjects } from '../../const'
 
 export const Projects = (): JSX.Element => {
   const [openModal, setOpenModal] = useState(false)
+  const [projTitle, setProjTitle] = useState<string | undefined>(undefined)
+  const [projDesc, setProjDesc] = useState<string | undefined>(undefined)
+  const [projGitHub, setProjGitHub] = useState<string | undefined>(undefined)
+  const [projTec, setProjTec] = useState<string[] | undefined>(undefined)
+  const [projImage, setProjImage] = useState<string | undefined>(undefined)
+
+  const captureData = (title: string, desc: string, github: string, tecs: string[], image: string): void => {
+    setProjTitle(title)
+    setProjDesc(desc)
+    setProjGitHub(github)
+    setProjTec(tecs)
+    setProjImage(image)
+  }
+
   const handleOpenModal = (): void => {
     setOpenModal(!openModal)
   }
@@ -11,6 +25,11 @@ export const Projects = (): JSX.Element => {
    <section className="h-auto py-20 px-8 overflow-hidden" id='Projects'>
     {openModal && <ModalProjects
       handleOpenModal = {handleOpenModal}
+      title={projTitle}
+      description={projDesc}
+      projGitHub={projGitHub}
+      projTecnologies={projTec}
+      projImages={projImage}
     />}
     <div className="flex items-center flex-col gap-20 md:gap-28">
       <h1 className="h-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400 md:text-6xl">Projects</h1>
@@ -20,7 +39,10 @@ export const Projects = (): JSX.Element => {
         DataProjects.map(proj => (
           <div
           key={proj.id}
-          onClick={handleOpenModal}
+          onClick={() => {
+            captureData(proj.title, proj.description, proj.githubLink, proj.tecnologies, proj.image)
+            handleOpenModal()
+          }}
           className="border-1 relative h-[400px] bg-center bg-cover bg-no-repeat flex flex-col justify-between rounded-xl cursor-pointer overflow-hidden transition-transform duration-200 hover:-translate-y-1.5 "
           >
             <img
