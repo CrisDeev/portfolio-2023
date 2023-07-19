@@ -6,14 +6,16 @@ interface Props {
   projGitHub: string | undefined
   projTecnologies: string[] | undefined
   projImages: string | undefined
+  projLink: string | undefined
 }
 
-export const ModalProjects: React.FC<Props> = ({ handleOpenModal, title, description, projGitHub, projTecnologies, projImages }) => {
+export const ModalProjects: React.FC<Props> = ({ handleOpenModal, title, description, projGitHub, projTecnologies, projImages, projLink }) => {
   console.log(title)
   console.log(description)
   console.log(projGitHub)
   console.log(projTecnologies)
   console.log(projImages)
+  console.log(projLink)
   return (
     <div className="fixed inset-0 z-20 bg-black bg-opacity-30 grid place-items-center">
       <div className="w-[280px] h-[600px] bg-[#16181A] p-8 flex flex-col items-center justify-between rounded-3xl md:w-[70%] xl:h-[80%] 2xl:h-[70%] 2xl:w-[60%]">
@@ -48,7 +50,7 @@ export const ModalProjects: React.FC<Props> = ({ handleOpenModal, title, descrip
             <AiFillGithub className='text-3xl text-red-600 cursor-pointer hover:text-red-800' />
           </a>
           <a
-            href=""
+            href={projLink}
             target='_blank'
             rel='noreferrer noopener'
           >
