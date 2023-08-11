@@ -13,7 +13,7 @@ export const DataProjects: ListOfProjects = [
     id: '1',
     title: 'To-Do App',
     description: 'App web donde prodrás anotar todas tus tareas y de manera comoda y sencilla llevar un control de todas ellas',
-    image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FToDoImage.png?alt=media&token=298c04f1-882e-4b70-9734-018a97951876',
+    image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-aabd1.appspot.com/o/Portfolio-Images%2FToDoImage.png?alt=media&token=926641a3-6e3f-4f1c-b7d1-1d82114c5d9a',
     projectLink: 'https://todo-app-typescript-iota.vercel.app/',
     githubLink: 'https://github.com/CrisDeev/todo-app-typescript',
     tecnologies: ['TypesScript', 'ReactJS', 'Tailwindcss']
