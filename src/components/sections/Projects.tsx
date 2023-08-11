@@ -40,7 +40,7 @@ export const Projects = (): JSX.Element => {
       bindings={bindings}
     />}
     <div className="flex items-center flex-col gap-20 md:gap-28">
-      <h1 className="h-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400 md:text-6xl">Projectos</h1>
+      <h1 className="h-20 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-purple-300 via-purple-800 to-cyan-400 md:text-6xl">Proyectos</h1>
       <div className="w-full grid justify-center gap-12 grid-cols-1 px-5 md:w-[70%] lg:grid-cols-2 lg:w-full xl:w-[80%] 2xl:w-[70%]">
 
       {
